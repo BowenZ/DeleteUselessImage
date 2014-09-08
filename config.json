@@ -1,0 +1,8 @@
+{
+	"auto": true,
+	"targetDir": "toClient",
+	"targetFile": ["toClient/index.html","toClient/style.less"],
+	"imageDir": "toClient/img",
+	"imageFilter": ".gif|.png|.jpg",
+	"backup": true
+}
