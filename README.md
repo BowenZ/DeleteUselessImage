@@ -27,4 +27,6 @@ DeleteUselessImage
 --------------------------
 Window下配置完之后双击start.bat。
 
-OSX下需用Shell运行‘node main.js’（MAC下尚未测试）
+OSX下需用Shell运行```node main.js```（MAC下尚未测试）
+
+如有Bug及修改意见欢迎反馈
