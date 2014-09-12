@@ -95,5 +95,18 @@ module.exports = {
 		}
 		fs.closeSync(fdr);
 		return fs.closeSync(fdw);
+	},
+	listDir: function(dir, nameOnly){
+		var result = [];
+		if(dir === undefined){
+			dir = fs.realpathSync('..');
+		}
+		rd.eachDirSync(dir, function(f, s) {
+			var arr = f.split(dir)[1].split('\\');
+			if(arr.length == 2){
+				nameOnly?result.push(arr[1]):result.push(f);
+			}
+		});
+		return result;
 	}
 }
